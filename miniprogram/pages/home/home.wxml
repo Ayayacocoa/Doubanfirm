@@ -1,0 +1,20 @@
+<!-- 一部电影 -->
+<view class="movie" wx:for="{{list}}" wx:key="index">
+<!-- 左侧是电影图片 -->
+<image class="movie-img" src="{{item.images.small}}"></image>
+<!-- 右侧是电影介绍 -->
+<view class="movie-info">
+<!-- 电影的标题 -->
+<view class="movie-title">{{item.title}}</view>
+<!-- 电影的评分 -->
+<view class="movie-score">{{item.rating.average}}分</view>
+<!-- 导演 -->
+ <view class="movie-daoyan" wx:for="{{item.directors}}" wx:key="index">导演:{{item.name}}</view>
+<!-- 主演 -->
+  <view>主演:<text wx:for="{{item.casts}}" wx:key="index">{{item.name[1]}}</text></view>
+<!-- 年份 -->
+<view>年份:{{item.year}}</view>
+<!-- 详情 -->
+<van-button type="danger" bindtap="jump" data-id="{{item.id}}">详情</van-button>
+</view>  
+</view>

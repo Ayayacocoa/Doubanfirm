@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-overlay": "/vant-weapp/popup/index",
+   "map1": "../map/map"
+  
+  }
+}

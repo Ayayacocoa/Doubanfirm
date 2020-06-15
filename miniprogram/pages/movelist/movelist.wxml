@@ -1,0 +1,31 @@
+<!--pages/movelist/movelist.wxml-->
+<view class="container"
+wx:for="{{list}}" wx:key="index">
+  <view class="top">
+       <!-- 发表人头像 -->
+      <image src="{{item.head}}"></image>
+      <view class="right">
+           <!-- 发表人 -->
+          <text>{{item.nick}}</text>
+          <!-- 发表人性别 -->
+            <image src="{{item.gender}}"></image>
+      </view>
+      <text style="color:red">{{item.title}}</text>
+  </view>
+ <view class="bottom">
+ <!-- 分数 -->
+  <van-rate value="{{item.score}}" />
+  <!-- 图片 -->
+  <view class="imgs">
+          <image wx:for="{{item.fids}}" wx:key="index" 
+          src="{{item}}">
+          </image>
+  </view>
+   <!-- 评论内容 -->
+    <text>
+      {{item.content}}
+    </text>  
+    
+ </view>
+
+</view>

@@ -1,0 +1,41 @@
+/* pages/home/home.wxss */
+/* 一部电影 */
+.movie{
+  display:flex;
+  padding:10rpx;
+  border-bottom:1rpx solid #f00;
+}
+/* 左侧图片 */
+.movie-img{
+  width:200rpx;
+  height:300rpx;
+  margin-right:30rpx;
+  /* padding: 20rpx; */
+}
+/* 右侧电影结邵 */
+.movie-info{
+  font-size:28rpx;
+  line-height:1.8;   /* 原间距1.8倍 */
+  /* margin-left: 20rpx; */
+}
+/* 标题 */
+.movie-title{
+  font-size:40rpx;
+ color:#666;
+}
+/* 分数 */
+.movie-score{
+ color:rgb(197, 105, 20);
+}
+/* 导演 */
+/* 演员 */
+/* 年份 */
+.movie-commit{
+  height:40rpx;
+  line-height: 40rpx;
+  background: #e54847;
+ color:#fff;
+ font-size:26rpx;
+ margin-top: 20rpx;
+ width:60rpx;
+}

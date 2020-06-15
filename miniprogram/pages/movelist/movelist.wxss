@@ -1,0 +1,45 @@
+/* pages/movelist/movelist.wxss */
+.container{
+  width: 100%;
+  border-bottom:20rpx solid #ccc; 
+}
+.top{
+  width: 100%;
+  display:flex;
+  justify-items: left;
+  align-items: center;
+  height:60px;
+}
+.top>image{
+  width: 60rpx;
+  height:60rpx;
+  border-radius:50%;
+  margin-right: 10rpx;
+}
+.right{
+  display:flex;
+  justify-items: left;
+  align-items: center;
+ width: 70%;
+}
+.right>image{
+width: 30rpx;
+  height:30rpx;
+}
+.bottom{
+   width:100%;
+  }
+  .imgs{
+   width:100%;
+   display: flex;
+   justify-content: left;
+ flex-wrap: wrap;
+  }
+  .imgs>image{
+    width: 33.333%;
+    height:240rpx;
+  }
+  .bottom>text{
+    display: block;
+    margin-bottom:30rpx;
+  }

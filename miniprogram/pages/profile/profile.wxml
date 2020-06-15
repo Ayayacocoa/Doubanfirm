@@ -1,0 +1,30 @@
+<!--pages/profile/profile.wxml-->
+<!-- 获取用户公开的信息 -->
+<!-- <button wx:if="{{nick==''}}" open-type="getUserInfo" bindgetuserinfo="getUser3">
+  获取我的信息
+</button> -->
+<view class="top">
+<image class="profile-img" src="{{head}}"></image>
+<view class="right">
+  <text>{{nick}}</text>
+  <image src="{{gender}}"></image>
+</view>
+</view>
+<view bindtap="goInfo" class="info">
+  <view>
+    <image src="{{info}}"></image>
+     我的评论
+  </view>
+  <image src="../../images/qian.png"></image>
+</view>
+<view bindtap="goCollect" class="collect">
+    <view>
+        <image src="{{collect}}"></image>
+          我的收藏
+    </view>
+      <image src="../../images/qian.png">
+
+      </image>
+</view>
+<map1></map1>
+

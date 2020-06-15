@@ -1,0 +1,41 @@
+/* pages/profile/profile.wxss */
+.profile-img{
+width:100rpx;
+height:100rpx;
+margin:0 10rpx;
+}
+.top,.info,.collect{
+  display: flex;
+  width: 100%;
+  height:130rpx;
+  align-items: center;
+}
+.top{
+  justify-content: left;
+  border-bottom:5rpx solid #f00;
+}
+.info,.collect{
+  border-bottom:1rpx solid #ccc;
+}
+image{
+width: 40rpx;
+height: 40rpx;
+}
+.info,.collect{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:0 20rpx;
+box-sizing:border-box;
+}
+.info>view,.collect>view{
+  display: flex;
+  align-items: center;
+}
+.info>view>image,.collect>view>image{
+  margin-right: 10rpx;
+}
+.info:hover,.collect:hover{
+  background: #ccc;
+  color:#fff;
+}
